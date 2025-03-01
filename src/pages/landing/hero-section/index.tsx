@@ -100,7 +100,7 @@ export default function HeroSection() {
               Decolonize India:
             </h3>
             <p className="mb-6 text-center text-sm font-semibold text-gray-500 sm:mb-12 sm:text-left lg:text-base">
-              A New Freedom Day, A New Constitution, A New Bharat
+              A New Freedom Day,<br /> A New Constitution,<br /> A New Bharat
             </p>
             <button
               onClick={handlePayment.bind(null, 10, "1")}
