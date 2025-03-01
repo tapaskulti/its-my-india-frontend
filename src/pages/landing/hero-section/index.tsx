@@ -1,4 +1,4 @@
-import BookImage from "../../../assets/book-image.jpeg";
+import BookImage from "../../../assets/book-img.png";
 import { useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -110,7 +110,7 @@ export default function HeroSection() {
             </button>
             <Toaster />
           </div>
-          <div className="max-w-64 flex-1">
+          <div className="max-w-96 flex-1">
             <img src={BookImage} alt="Book Image" />
           </div>
         </div>

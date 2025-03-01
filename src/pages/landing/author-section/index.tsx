@@ -34,7 +34,7 @@ export default function AuthorSection() {
             <div className="flex-1">
               <div className="relative mx-auto max-w-80 flex-1 md:min-w-48 xl:min-w-64">
                 <img src={RyanImage} alt="Ryan Image" />
-                <p className="absolute inset-x-0 bottom-0 p-2 text-center text-lg font-medium text-slate-950">
+                <p className="absolute inset-x-0 -bottom-10 p-2 text-center text-lg font-medium text-slate-950">
                   Dr. Ryan Baidya
                 </p>
               </div>
