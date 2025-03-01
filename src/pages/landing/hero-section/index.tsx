@@ -1,4 +1,4 @@
-import BookImage from "../../../assets/book-image.png";
+import BookImage from "../../../assets/book-image.jpeg";
 import { useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -104,7 +104,7 @@ export default function HeroSection() {
             </p>
             <button
               onClick={handlePayment.bind(null, 10, "1")}
-              className="mx-auto flex w-full max-w-64 items-center justify-center rounded-full bg-blue-400 px-12 py-3 font-semibold capitalize text-white hover:bg-blue-500 sm:ml-0 sm:mr-auto"
+              className="mx-auto flex w-full max-w-64 items-center justify-center rounded-full bg-[#b8ce8d] px-12 py-3 font-semibold capitalize text-white hover:bg-[#afc584] sm:ml-0 sm:mr-auto"
             >
               buy now
             </button>
