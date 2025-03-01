@@ -3,9 +3,9 @@ import MottoSection from "./motto-section";
 import AuthorSection from "./author-section";
 import CommentSection from "./comment-section";
 
-type Props = {};
+// type Props = {};
 
-export default function LandingPage({}: Props) {
+export default function LandingPage() {
   return (
     <>
       <HeroSection />
