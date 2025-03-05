@@ -91,7 +91,7 @@ export default function HeroSection() {
   return (
     <div className="bg-white py-16">
       <section id="hero" className="mx-4 md:mx-8">
-        <div className="mx-auto flex max-w-3xl flex-col-reverse items-center justify-center gap-8 sm:flex-row">
+        <div className="mx-auto flex max-w-6xl flex-col-reverse items-center justify-center gap-8 sm:flex-row">
           <div className="flex flex-1 flex-col justify-center md:min-w-96">
             <h2 className="mb-8 text-center text-base font-bold sm:text-left md:text-lg">
               "A New Democratic Republic for India"

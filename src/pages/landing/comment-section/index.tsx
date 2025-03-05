@@ -31,7 +31,7 @@ export default function CommentSection() {
   return (
     <div className="bg-slate-100 py-16">
       <section id="moto" className="mx-4 md:mx-8">
-        <div className="mx-auto max-w-3xl">
+        <div className="mx-auto max-w-6xl">
           <h3 className="mb-4 text-center text-2xl font-semibold text-slate-900 md:mb-8 md:text-4xl">
             What Our Readers Say
           </h3>
@@ -47,7 +47,7 @@ export default function CommentSection() {
             </div>
             <div className="flex-1" aria-hidden="true" />
             <div>
-              <motion.div className="max-w-96 h-80 rounded-lg bg-white p-8 shadow-sm">
+              <motion.div className="max-w-[30rem] h-80 rounded-lg bg-white p-8 shadow-sm">
                 <p className="mb-8 text-center">
                   <Quote className="inline size-3 -translate-y-1/2 rotate-180 fill-black" />
                   &nbsp;

@@ -9,7 +9,7 @@ export default function FooterSection() {
 
         <div className="bg-[#303c42] pt-16">
       <section id="moto" className="mx-4 md:mx-8">
-        <div className="mx-auto max-w-3xl text-xs font-normal text-white">
+        <div className="mx-auto max-w-6xl text-xs font-normal text-white">
           
           <div className="flex justify-between items-start">
 
@@ -26,10 +26,11 @@ export default function FooterSection() {
                 <h3 className="text-center text-sm mb-5 text-white/70">
                     For inquiries, collaborations, or media requests, contact us at:
                 </h3>
-                <div className="flex items-center my-3">
+                <div className="flex items-center">
                     <Mail className="lg:w-6 lg:h-4 w-5 h-4" /><h2><a href="mailto:info@takshilafound.org" className="hover:text-white/70">info@takshilafound.org</a><br /></h2>
                 </div>
-<div className="flex items-center"><PhoneCall className="lg:w-6 lg:h-4 w-5 h-4" /><h2>+91 99999 99999</h2></div>
+<div className="flex items-center my-3"><PhoneCall className="lg:w-6 lg:h-4 w-5 h-4" /><h2>India: +91 77991 12264</h2></div>
+<div className="flex items-center"><PhoneCall className="lg:w-6 lg:h-4 w-5 h-4" /><h2>USA: +1-408-230-1553</h2></div>
 
             </div>
         </div>
