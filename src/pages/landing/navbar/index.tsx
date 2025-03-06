@@ -97,7 +97,7 @@ export default function Navbar() {
             <h2 className="text-xl text-gray-600 font-medium">Dr. Ryan Baidya</h2>
             <ul className="flex space-x-8 justify-between items-center text-gray-900 text-sm">
                 <li><Link to="/" className="hover:text-[#7e9452]">Home</Link></li>
-                <li><Link to="/about-us" className="hover:text-[#7e9452]">About Author</Link></li>
+                <li><Link to="/about-author" className="hover:text-[#7e9452]">About Author</Link></li>
                 <li><Link to="/the-movement" className="hover:text-[#7e9452]">The Movement</Link></li>
                 <li><Link to="the-book" className="hover:text-[#7e9452]">The Book</Link></li>
                 <li><Link to="contacts-media" className="hover:text-[#7e9452]">Contacts & Media</Link></li>

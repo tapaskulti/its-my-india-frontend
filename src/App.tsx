@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import LandingPage from "./pages/landing";
 import ErrorPage from "./pages/error-page";
 import RootLayout from "./pages/root-layout";
+import AboutAuthor from "./pages/about-author";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <LandingPage /> },
+      { path: "about-author", element: <AboutAuthor /> },
       { path: "success", element: <>Success</> },
       { path: "cancel", element: <>Failed</> },
     ],
