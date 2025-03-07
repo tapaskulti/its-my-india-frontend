@@ -6,6 +6,7 @@ import ErrorPage from "./pages/error-page";
 import RootLayout from "./pages/root-layout";
 import AboutAuthor from "./pages/about-author";
 import ContactMedia from "./pages/contact-media";
+import TheMovement from "./pages/the-movement"
 
 const router = createBrowserRouter([
   {

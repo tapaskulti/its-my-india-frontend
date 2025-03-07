@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import FacebookIcon from "../../../assets/svg/facebook-icon";
 import TwitterIcon from "../../../assets/svg/twitter-icon";
 import YoutubeIcon from "../../../assets/svg/youtube-icon";
+import LinkedInIcon from "../../../assets/svg/linkedin-icon";
 
 
 
@@ -39,7 +40,7 @@ export default function FooterSection() {
                 <div className="flex space-x-5 text-sm">
                     <a href=""><FacebookIcon className="lg:w-6 lg:h-4 w-5 h-4 text-gray-200 hover:text-gray-500" /></a>
                     <a href=""><TwitterIcon className="lg:w-6 lg:h-4 w-5 h-4 text-gray-200 hover:text-gray-500" /></a>
-                    <a href=""><FacebookIcon className="lg:w-6 lg:h-4 w-5 h-4 text-gray-200 hover:text-gray-500" /></a>
+                    <a href=""><LinkedInIcon className="lg:w-6 lg:h-4 w-5 h-4 text-gray-200 hover:text-gray-500" /></a>
                     <a href=""><YoutubeIcon className="lg:w-5 lg:h-5 w-5 h-4 text-gray-200 hover:text-gray-500" /></a>
                 </div>
             </div>

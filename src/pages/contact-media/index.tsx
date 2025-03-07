@@ -2,6 +2,7 @@ import { PhoneCall } from "lucide-react";
 import FacebookIcon from "../../assets/svg/facebook-icon";
 import TwitterIcon from "../../assets/svg/twitter-icon";
 import YoutubeIcon from "../../assets/svg/youtube-icon";
+import LinkedInIcon from "../../assets/svg/linkedin-icon";
 
 
 export default function ContactMedia() {
@@ -28,7 +29,7 @@ Email: <a href="mailto:info@takshilafound.org" className="font-medium">info@taks
                 <div className="flex space-x-5 text-sm">
                     <a href=""><div className="flex items-center font-medium space-x-1 bg-gray-50 size-8 rounded-full border border-gray-200 hover:border-none justify-center"><FacebookIcon className="lg:w-6 lg:h-4 w-5 h-4 text-gray-500" /></div></a>
                     <a href=""><div className="flex items-center font-medium space-x-1 bg-gray-50 size-8 rounded-full border border-gray-200 hover:border-none justify-center"><TwitterIcon className="lg:w-6 lg:h-4 w-5 h-4 text-gray-500" /></div></a>
-                    <a href=""><div className="flex items-center font-medium space-x-1 bg-gray-50 size-8 rounded-full border border-gray-200 hover:border-none justify-center"><FacebookIcon className="lg:w-6 lg:h-4 w-5 h-4 text-gray-500" /></div></a>
+                    <a href=""><div className="flex items-center font-medium space-x-1 bg-gray-50 size-8 rounded-full border border-gray-200 hover:border-none justify-center"><LinkedInIcon className="lg:w-6 lg:h-4 w-5 h-4 text-gray-500" /></div></a>
                     <a href=""><div className="flex items-center font-medium space-x-1 bg-gray-50 size-8 rounded-full border border-gray-200 hover:border-none justify-center"><YoutubeIcon className="lg:w-5 lg:h-5 w-5 h-4 text-gray-500" /></div></a>
                 </div>
             </div>
