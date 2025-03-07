@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-// import { ArrowRight } from "lucide-react";
 import RyanImage2 from "../../assets/ryan-image2.png"
 import { Share2, User } from "lucide-react";
 

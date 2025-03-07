@@ -43,7 +43,7 @@ export default function AuthorSection() {
             </div>
           </div>
           <Link
-            to={"/aboutUs"}
+            to={"/about-author"}
             className="mt-16 mx-auto flex w-full max-w-64 items-center justify-center rounded-full bg-[#b8ce8d] px-12 py-3 font-semibold capitalize text-white hover:bg-[#afc584]"
           >
             Know More

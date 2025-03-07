@@ -1,5 +1,8 @@
 import { Mail, PhoneCall } from "lucide-react";
 import { Link } from "react-router-dom";
+import FacebookIcon from "../../../assets/svg/facebook-icon";
+import TwitterIcon from "../../../assets/svg/twitter-icon";
+import YoutubeIcon from "../../../assets/svg/youtube-icon";
 
 
 
@@ -31,6 +34,15 @@ export default function FooterSection() {
                 </div>
 <div className="flex items-center my-3"><PhoneCall className="lg:w-6 lg:h-4 w-5 h-4" /><h2>India: +91 77991 12264</h2></div>
 <div className="flex items-center"><PhoneCall className="lg:w-6 lg:h-4 w-5 h-4" /><h2>USA: +1-408-230-1553</h2></div>
+<div className="mt-6">
+                <h2 className="mb-2">Follow Us on Social Media</h2>
+                <div className="flex space-x-5 text-sm">
+                    <a href=""><FacebookIcon className="lg:w-6 lg:h-4 w-5 h-4 text-gray-200 hover:text-gray-500" /></a>
+                    <a href=""><TwitterIcon className="lg:w-6 lg:h-4 w-5 h-4 text-gray-200 hover:text-gray-500" /></a>
+                    <a href=""><FacebookIcon className="lg:w-6 lg:h-4 w-5 h-4 text-gray-200 hover:text-gray-500" /></a>
+                    <a href=""><YoutubeIcon className="lg:w-5 lg:h-5 w-5 h-4 text-gray-200 hover:text-gray-500" /></a>
+                </div>
+            </div>
 
             </div>
         </div>

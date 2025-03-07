@@ -5,6 +5,7 @@ import LandingPage from "./pages/landing";
 import ErrorPage from "./pages/error-page";
 import RootLayout from "./pages/root-layout";
 import AboutAuthor from "./pages/about-author";
+import ContactMedia from "./pages/contact-media";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,8 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <LandingPage /> },
       { path: "about-author", element: <AboutAuthor /> },
+      { path: "contact-media", element: <ContactMedia /> },
+      { path: "the-movement", element: <TheMovement /> },
       { path: "success", element: <>Success</> },
       { path: "cancel", element: <>Failed</> },
     ],
