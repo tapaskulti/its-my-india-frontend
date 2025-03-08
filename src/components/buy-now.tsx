@@ -138,32 +138,36 @@ export default function BuyNow({ TriggerComponent }: Props) {
               <Label htmlFor="link" className="sr-only">
                 Link
               </Label>
-              <div className="flex items-center">
+              <div className="flex items-center space-x-2">
                 <Input
                 id="link"
                 value={coupon}
                 onChange={(e) => setCoupon(e.target.value)}
+                className="w-40"
               />
 
-            <button onClick={applyCouponHandler}>Check Coupon</button>
+            <button onClick={applyCouponHandler} className="text-sm text-green-600">Check Coupon</button>
               </div>
-              {couponMessage}
+              <h2 className="text-xs text-red-600">{couponMessage}</h2>
               
             </div>
-            <button
+            <div className="flex items-center space-x-2 w-full my-6">
+            <DialogFooter className="sm:justify-start">
+          <DialogClose asChild>
+            <button type="button" className="bg-gray-200 text-black text-sm px-6 py-2 rounded-full">Close</button>
+          </DialogClose>
+        </DialogFooter>
+              <button
               type="button"
               onClick={handlePayment}
-              className="mx-auto flex w-full max-w-64 items-center justify-center rounded-full bg-[#b8ce8d] px-12 py-3 font-semibold capitalize text-white hover:bg-[#afc584] sm:ml-0 sm:mr-auto"
+              className="text-sm px-6 py-2 rounded-full bg-[#afc584] font-semibold text-white capitalize hover:bg-[#b8ce8d] sm:ml-0 sm:mr-auto"
             >
               buy now
             </button>
+            </div>
           </div>
         </div>
-        <DialogFooter className="sm:justify-start">
-          <DialogClose asChild>
-            <button type="button" className="bg-gray-700 text-white text-sm px-6 py-2 rounded-full">Close</button>
-          </DialogClose>
-        </DialogFooter>
+        
       </DialogContent>
     </Dialog>
   );

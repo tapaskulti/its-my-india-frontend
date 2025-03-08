@@ -25,7 +25,7 @@ export default function HeroSection() {
               TriggerComponent={
                 <button
                   type="button"
-                  className="mx-auto flex w-full max-w-64 items-center justify-center rounded-full bg-[#b8ce8d] px-12 py-3 font-semibold capitalize text-white hover:bg-[#afc584] sm:ml-0 sm:mr-auto"
+                  className="mx-auto flex w-full max-w-64 items-center justify-center rounded-full bg-[#afc584] px-12 py-3 font-semibold capitalize text-white hover:bg-[#b8ce8d] sm:ml-0 sm:mr-auto"
                 >
                   buy now
                 </button>

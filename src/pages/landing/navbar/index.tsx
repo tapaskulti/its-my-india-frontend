@@ -128,7 +128,7 @@ export default function Navbar() {
             TriggerComponent={
               <button
                 // onClick={handlePayment.bind(null, 10, "1")}
-                className="rounded-lg bg-[#b8ce8d] px-2 py-2 text-sm text-white hover:bg-[#afc584]"
+                className="rounded-lg bg-[#afc584] px-2 py-2 text-sm text-white hover:bg-[#b8ce8d]"
               >
                 Buy Now
               </button>
