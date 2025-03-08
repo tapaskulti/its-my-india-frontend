@@ -65,7 +65,21 @@ const DATA = [
     designation: "Entrepreneur, Software Engineer",
     location: "Kolkata, WB",
     comment:
-    `… This book clearly showed that our Constitutional democracy is not secular, or socialist.    The author rightly pointed out that the constitution in its current form is not up to the task of moving the nation forward as the citizens aspire for. It is a must-read book.`,
+    `Dr. Baidya’s book on the Indian Constitution and its deficiencies is a compelling work and written in plain English for easy to understand by every Aam Admi.  He raised critical questions about the nature of the founding document of the nation and argued that the Constitution requires a comprehensive review. This is a timely book and it would benefit the nation if it inspired debates and dialogues for periodic constitutional review process.`,
+  },
+  {
+    name: "Popat Tantod",
+    designation: "High school teacher",
+    location: "Meghalaya",
+    comment:
+      "I enjoyed the book very much, and I would recommend this book to anyone who cares for our country’s future…",
+  },
+  {
+    name: "Bhavin Vaidya",
+    // designation: "High school teacher",
+    location: "Silicon Valley California",
+    comment:
+      "We had been taught so much wrong about the genesis of our system of democracy.  It is a book that should be taught in high schools and colleges so that the new generation learn the truth earlier and demand for rightful system for their generation.",
   },
 ];
 
