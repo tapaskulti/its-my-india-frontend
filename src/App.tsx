@@ -8,6 +8,7 @@ import AboutAuthor from "./pages/about-author";
 import ContactMedia from "./pages/contact-media";
 import TheMovement from "./pages/the-movement"
 import TheBook from "./pages/the-book";
+import ResourcesArticles from "./pages/resources-articles";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       { path: "contact-media", element: <ContactMedia /> },
       { path: "the-movement", element: <TheMovement /> },
       { path: "the-book", element: <TheBook /> },
+      { path: "resources-articles", element: <ResourcesArticles /> },
       { path: "success", element: <>Success</> },
       { path: "cancel", element: <>Failed</> },
     ],

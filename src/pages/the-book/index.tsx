@@ -1,4 +1,4 @@
-import { BookOpenText, CheckCheck, MessageCircleQuestion, Trophy } from "lucide-react";
+import { BookOpenText, CheckCheck, Trophy } from "lucide-react";
 import BuyNow from "../../components/buy-now";
 
 
