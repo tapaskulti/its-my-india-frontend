@@ -7,6 +7,7 @@ import RootLayout from "./pages/root-layout";
 import AboutAuthor from "./pages/about-author";
 import ContactMedia from "./pages/contact-media";
 import TheMovement from "./pages/the-movement"
+import TheBook from "./pages/the-book";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       { path: "about-author", element: <AboutAuthor /> },
       { path: "contact-media", element: <ContactMedia /> },
       { path: "the-movement", element: <TheMovement /> },
+      { path: "the-book", element: <TheBook /> },
       { path: "success", element: <>Success</> },
       { path: "cancel", element: <>Failed</> },
     ],

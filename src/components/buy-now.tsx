@@ -126,9 +126,9 @@ export default function BuyNow({ TriggerComponent }: Props) {
       <DialogTrigger>{TriggerComponent}</DialogTrigger>
       <DialogContent className="bg-white sm:max-w-md">
         <DialogHeader>
-          <DialogTitle>Share link</DialogTitle>
+          <DialogTitle>Input Coupon</DialogTitle>
           <DialogDescription>
-            Anyone who has this link will be able to view this.
+            Anyone who has this coupon will be able to get discount.
           </DialogDescription>
         </DialogHeader>
         <div className="flex items-center space-x-2">
@@ -137,13 +137,17 @@ export default function BuyNow({ TriggerComponent }: Props) {
               <Label htmlFor="link" className="sr-only">
                 Link
               </Label>
-              <Input
+              <div className="flex items-center">
+                <Input
                 id="link"
                 value={coupon}
                 onChange={(e) => setCoupon(e.target.value)}
               />
+
+            <button onClick={applyCouponHandler}>Check Coupon</button>
+              </div>
               {couponMessage}
-              <button onClick={applyCouponHandler}>Check Coupon</button>
+              
             </div>
             <button
               type="button"
@@ -156,7 +160,7 @@ export default function BuyNow({ TriggerComponent }: Props) {
         </div>
         <DialogFooter className="sm:justify-start">
           <DialogClose asChild>
-            <button type="button">Close</button>
+            <button type="button" className="bg-gray-700 text-white text-sm px-6 py-2 rounded-full">Close</button>
           </DialogClose>
         </DialogFooter>
       </DialogContent>
