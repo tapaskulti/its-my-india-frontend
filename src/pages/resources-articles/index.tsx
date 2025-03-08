@@ -1,5 +1,4 @@
-import { BookOpenText, CheckCheck, Trophy } from "lucide-react";
-import BuyNow from "../../components/buy-now";
+import { CheckCheck } from "lucide-react";
 
 
 export default function ResourcesArticles() {
