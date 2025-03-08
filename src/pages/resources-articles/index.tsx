@@ -1,4 +1,7 @@
 import { CheckCheck } from "lucide-react";
+import article01 from '../../assets/article01.jpg'
+import article02 from '../../assets/article02.jpg'
+import article03 from '../../assets/article03.jpg'
 
 
 export default function ResourcesArticles() {
@@ -52,6 +55,40 @@ export default function ResourcesArticles() {
                   <div className="my-4 leading-8">
                     <h2 className="font-medium pb-1">Download Whitepapers & Research Reports</h2>
                     
+                  </div>
+
+                </div>
+
+                <div className="mt-16 px-6 py-2 border border-gray-300 rounded-md">
+
+                  <div className="flex items-start space-x-5 border-b border-gray-200 py-4">
+                    <a href="https://educationpost.in/news/opinion/from-colonial-legacy-indigenous-identity-redefining-indias-constitution" className="w-1/4" target="_blank">
+                      <img src={article01} alt="" className="w-full" />
+                    </a>
+                    <div className="w-3/4">
+                      <a href="https://educationpost.in/news/opinion/from-colonial-legacy-indigenous-identity-redefining-indias-constitution" className="text-lg font-medium text-blue-500">From Colonial Legacy to Indigenous Identity: Redefining India's Constitution</a>
+                      <h2 className="leading-6 pt-3">Ryan Baidya, Ph.D., MBA, Takshila Foundation, San Jose, argues that India's Constitution, rooted in colonial frameworks, positions the state above the people, echoing colonial governance. He advocates re-imagining the Constitution to reflect India's indigenous values and sovereignty, as it was neither directly approved by the people nor fully aligned with democratic principles.</h2>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-5 border-b border-gray-200 py-4">
+                    <a href="https://myind.net/Home/viewArticle/decolonise-india-re-imagining-a-new-constitution-for-india" className="w-1/4" target="_blank">
+                      <img src={article02} alt="" className="w-full" />
+                    </a>
+                    <div className="w-3/4">
+                      <a href="https://myind.net/Home/viewArticle/decolonise-india-re-imagining-a-new-constitution-for-india" className="text-lg font-medium text-blue-500">Decolonise India: Re-imagining a New Constitution for India</a>
+                      <h2 className="leading-6 pt-3"></h2>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-5 border-b border-gray-200 py-4">
+                    <a href="https://medium.com/@eduzakka/simplicity-vs-complexity-the-hidden-costs-and-rewards-of-constitutional-design-bd7da0412d9e" className="w-1/4" target="_blank">
+                      <img src={article03} alt="" className="w-full" />
+                    </a>
+                    <div className="w-3/4">
+                      <a href="https://medium.com/@eduzakka/simplicity-vs-complexity-the-hidden-costs-and-rewards-of-constitutional-design-bd7da0412d9e" className="text-lg font-medium text-blue-500">Simplicity vs. Complexity: The Hidden Costs and Rewards of Constitutional Design</a>
+                      <h2 className="leading-6 pt-3">Simplicity is often misunderstood as a shortcut, a way to bypass complexity. Yet, simplicity, when achieved in its truest form, is the result of meticulous effort and profound understanding. The design ethos of legendary figures like Picasso and Steve Jobs reflects this. So, too, do the contrasting designs of the constitutions of India and the United States — one complex and layered, the other seemingly simple yet deeply impactful.</h2>
+                    </div>
                   </div>
 
                 </div>
