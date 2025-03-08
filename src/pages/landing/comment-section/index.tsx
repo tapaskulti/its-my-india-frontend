@@ -104,7 +104,7 @@ export default function CommentSection() {
             </div>
             <div className="flex-1" aria-hidden="true" />
             <div>
-              <motion.div className="max-w-[30rem] h-80 rounded-lg bg-white p-8 shadow-sm">
+              <motion.div className="max-w-[39rem] h-[22rem] overflow-y-auto rounded-lg bg-white p-8 shadow-sm">
                 <p className="mb-8 text-center">
                   <Quote className="inline size-3 -translate-y-1/2 rotate-180 fill-black" />
                   &nbsp;
