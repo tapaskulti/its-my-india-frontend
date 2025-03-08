@@ -1,93 +1,9 @@
+import { Toaster } from "react-hot-toast";
+
 import BookImage from "../../../assets/book-img.png";
-import { useEffect } from "react";
-import toast, { Toaster } from "react-hot-toast";
+import BuyNow from "../../../components/buy-now";
 
 export default function HeroSection() {
-  const loadScript = (src: string) => {
-    return new Promise((resolve) => {
-      const script = document.createElement("script");
-      script.src = src;
-      script.onload = () => {
-        resolve(true);
-      };
-      script.onerror = () => {
-        resolve(false);
-      };
-      document.body.appendChild(script);
-    });
-  };
-
-  // handlePayment Function
-  const handlePayment = async (amount: number, itemName: string) => {
-    try {
-      const res = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/api/createOrder`,
-        {
-          method: "POST",
-          headers: {
-            "content-type": "application/json",
-          },
-          body: JSON.stringify({
-            amount,
-            bookId: itemName,
-          }),
-        },
-      );
-
-      const data = await res.json();
-      handlePaymentVerify(data.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  // handlePaymentVerify Function
-  const handlePaymentVerify = async (data: any) => {
-    const options = {
-      key: import.meta.env.RAZORPAY_KEY_ID,
-      amount: data.amount,
-      currency: data.currency,
-      name: "Dr. Ryan Baidya", // Payment to Name
-      description: "",
-      order_id: data.id,
-      handler: async (response: any) => {
-        try {
-          const res = await fetch(
-            `${import.meta.env.VITE_BACKEND_URL}/api/verifyPayment`,
-            {
-              method: "POST",
-              headers: {
-                "content-type": "application/json",
-              },
-              body: JSON.stringify({
-                razorpay_order_id: response.razorpay_order_id,
-                razorpay_payment_id: response.razorpay_payment_id,
-                razorpay_signature: response.razorpay_signature,
-              }),
-            },
-          );
-
-          const verifyData = await res.json();
-
-          if (verifyData.message) {
-            toast.success(verifyData.message);
-          }
-        } catch (error) {
-          console.log(error);
-        }
-      },
-      theme: {
-        color: "#5f63b8",
-      },
-    };
-    const rzp1 = new (window as any).Razorpay(options);
-    rzp1.open();
-  };
-
-  useEffect(() => {
-    loadScript("https://checkout.razorpay.com/v1/checkout.js");
-  }, []);
-
   return (
     <div className="bg-white py-16">
       <section id="hero" className="mx-4 md:mx-8">
@@ -100,14 +16,22 @@ export default function HeroSection() {
               Decolonize India:
             </h3>
             <p className="mb-6 text-center text-sm font-semibold text-gray-500 sm:mb-12 sm:text-left lg:text-base">
-              A New Freedom Day,<br /> A New Constitution,<br /> A New Bharat
+              A New Freedom Day,
+              <br /> A New Constitution,
+              <br /> A New Bharat
             </p>
-            <button
-              onClick={handlePayment.bind(null, 10, "1")}
-              className="mx-auto flex w-full max-w-64 items-center justify-center rounded-full bg-[#b8ce8d] px-12 py-3 font-semibold capitalize text-white hover:bg-[#afc584] sm:ml-0 sm:mr-auto"
-            >
-              buy now
-            </button>
+
+            <BuyNow
+              TriggerComponent={
+                <button
+                  type="button"
+                  className="mx-auto flex w-full max-w-64 items-center justify-center rounded-full bg-[#b8ce8d] px-12 py-3 font-semibold capitalize text-white hover:bg-[#afc584] sm:ml-0 sm:mr-auto"
+                >
+                  buy now
+                </button>
+              }
+            />
+
             <Toaster />
           </div>
           <div className="max-w-96 flex-1">
@@ -118,3 +42,45 @@ export default function HeroSection() {
     </div>
   );
 }
+
+// {/* <Dialog>
+//               <DialogTrigger asChild>
+//                 {/* <Button variant="outline">Share</Button> */}
+//                 <button
+//                   // onClick={handlePayment.bind(null, 10, "1")}
+//                   className="mx-auto flex w-full max-w-64 items-center justify-center rounded-full bg-[#b8ce8d] px-12 py-3 font-semibold capitalize text-white hover:bg-[#afc584] sm:ml-0 sm:mr-auto"
+//                 >
+//                   buy now
+//                 </button>
+//               </DialogTrigger>
+//               <DialogContent className="bg-white sm:max-w-md">
+//                 <DialogHeader>
+//                   <DialogTitle>Share link</DialogTitle>
+//                   <DialogDescription>
+//                     Anyone who has this link will be able to view this.
+//                   </DialogDescription>
+//                 </DialogHeader>
+//                 <div className="flex items-center space-x-2">
+//                   {/* <div className="grid flex-1 gap-2">
+//                     <Label htmlFor="link" className="sr-only">
+//                       Link
+//                     </Label>
+//                     <Input
+//                       id="link"
+//                       defaultValue="https://ui.shadcn.com/docs/installation"
+//                       readOnly
+//                     />
+//                   </div>
+//                   <Button type="submit" size="sm" className="px-3">
+//                     <span className="sr-only">Copy</span>
+//                     <Copy />
+//                   </Button> */}
+//                   <Pay />
+//                 </div>
+//                 <DialogFooter className="sm:justify-start">
+//                   <DialogClose asChild>
+//                     <button type="button">Close</button>
+//                   </DialogClose>
+//                 </DialogFooter>
+//               </DialogContent>
+//             </Dialog> */}
