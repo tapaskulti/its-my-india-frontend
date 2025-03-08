@@ -72,12 +72,12 @@ export default function ResourcesArticles() {
                   </div>
 
                   <div className="flex items-start space-x-5 border-b border-gray-200 py-4">
-                    <a href="https://myind.net/Home/viewArticle/decolonise-india-re-imagining-a-new-constitution-for-india" className="w-1/4" target="_blank">
+                    <a href="https://educationpost.in/news/opinion/restoring-balance-addressing-the-injustices-of-indias-constitution#google_vignette" className="w-1/4" target="_blank">
                       <img src={article02} alt="" className="w-full" />
                     </a>
                     <div className="w-3/4">
-                      <a href="https://myind.net/Home/viewArticle/decolonise-india-re-imagining-a-new-constitution-for-india" className="text-lg font-medium text-blue-500">Decolonise India: Re-imagining a New Constitution for India</a>
-                      <h2 className="leading-6 pt-3"></h2>
+                      <a href="https://educationpost.in/news/opinion/restoring-balance-addressing-the-injustices-of-indias-constitution#google_vignette" className="text-lg font-medium text-blue-500">Restoring Balance: Addressing the Injustices of India’s Constitution</a>
+                      <h2 className="leading-6 pt-3">The Indian Constitution, through various amendments, has allegedly created imbalances favoring minority communities over the Hindu majority. Key concerns include religious freedoms under Articles 25, 28, and 30, the government's control over Hindu temples, and the introduction of secularism in 1975. Reform is urged to ensure equal rights for all, preserve Hindu culture, and correct perceived injustices.</h2>
                     </div>
                   </div>
 
