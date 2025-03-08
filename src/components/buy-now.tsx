@@ -12,6 +12,7 @@ import {
   DialogTrigger,
 } from "./ui/dialog";
 import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 
 type Props = { TriggerComponent: React.ReactNode };
 
