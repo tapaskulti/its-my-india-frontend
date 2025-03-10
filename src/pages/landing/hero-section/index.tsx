@@ -8,24 +8,22 @@ export default function HeroSection() {
     <div className="bg-white py-16">
       <section id="hero" className="mx-4 md:mx-8">
         <div className="mx-auto flex max-w-6xl flex-col-reverse items-center justify-center gap-8 sm:flex-row">
-          <div className="flex flex-1 flex-col justify-center md:min-w-96">
-            <h2 className="mb-8 text-center text-base font-bold sm:text-left md:text-lg">
-              "A New Democratic Republic for India"
+          <div className="flex flex-1 flex-col justify-center md:min-w-96 pt-5">
+            <h2 className="mb-8 text-center text-base font-bold sm:text-center md:text-4xl">
+              "Declonize India: Re-imagine"
             </h2>
-            <h3 className="text-center text-xl font-bold sm:text-left">
-              Decolonize India:
+            <h3 className="text-center text-3xl font-bold pb-2 text-red-500">
+              A New Democratic Republic Constitution for India
             </h3>
-            <p className="mb-6 text-center text-sm font-semibold text-gray-500 sm:mb-12 sm:text-left lg:text-base">
-              A New Freedom Day,
-              <br /> A New Constitution,
-              <br /> A New Bharat
+            <p className="mb-6 leading-7 text-center text-sm font-semibold text-gray-500 sm:mb-12 sm:text-center lg:text-lg">
+              The book outlines a roadmap for drafting a Constitution rooted in India’s unique heritage and aspirations. It offers a transformative vision and a pragmatic approach to adopting a new, inclusive Constitution—a journey every Indian must undertake.
             </p>
 
             <BuyNow
               TriggerComponent={
                 <button
                   type="button"
-                  className="mx-auto flex w-full max-w-64 items-center justify-center rounded-full bg-[#afc584] px-12 py-3 font-semibold capitalize text-white hover:bg-[#b8ce8d] sm:ml-0 sm:mr-auto"
+                  className="mx-auto flex w-full max-w-64 items-center justify-center rounded-full bg-[#afc584] px-12 py-3 font-semibold capitalize text-white hover:bg-[#b8ce8d]"
                 >
                   buy now
                 </button>
