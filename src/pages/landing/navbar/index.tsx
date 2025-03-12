@@ -1,6 +1,7 @@
 import { Toaster } from "react-hot-toast";
 import { Link } from "react-router-dom";
 import BuyNow from "../../../components/buy-now";
+// import logoMap from "../../../assets/map.png";
 
 export default function Navbar() {
   // const loadScript = (src: string) => {
@@ -89,8 +90,9 @@ export default function Navbar() {
   // }, []);
 
   return (
+    <div className="fixed top-0 left-0 w-full bg-slate-100 shadow-sm z-50">
     <div className="mx-auto flex max-w-6xl justify-between py-7">
-      <h2 className="text-xl font-medium text-gray-600">Dr. Ryan Baidya</h2>
+      <Link to="/its-my-india"><h2 className="text-2xl font-medium text-[#138808]">ItsMyIndia</h2></Link>
       <ul className="flex items-center justify-between space-x-6 text-sm text-gray-900">
         <li>
           <Link to="/" className="hover:text-[#7e9452]">
@@ -136,6 +138,7 @@ export default function Navbar() {
           />
         </li>
       </ul>
+    </div>
     </div>
   );
 }

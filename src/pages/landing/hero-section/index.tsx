@@ -12,7 +12,7 @@ export default function HeroSection() {
             <h2 className="mb-8 text-center text-base font-bold sm:text-center md:text-4xl">
               "Declonize India: Re-imagine"
             </h2>
-            <h3 className="text-center text-3xl font-bold pb-2 text-red-500">
+            <h3 className="text-center text-3xl font-bold pb-2 text-[#FF9933]">
               A New Democratic Republic Constitution for India
             </h3>
             <p className="mb-6 leading-7 text-center text-sm font-semibold text-gray-500 sm:mb-12 sm:text-center lg:text-lg">

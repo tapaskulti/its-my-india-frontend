@@ -11,23 +11,24 @@ export default function FooterSection() {
 
   return (
 
-        <div className="bg-[#303c42] pt-16">
+        <div className="bg-slate-100 pt-16">
       <section id="moto" className="mx-4 md:mx-8">
-        <div className="mx-auto max-w-6xl text-xs font-normal text-white">
+        <div className="mx-auto max-w-6xl text-sm font-normal text-black">
           
           <div className="flex justify-between items-start">
 
             <div>
-                <ul className="leading-8">
+                <ul className="flex items-center space-x-3">
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="">About Author</Link></li>
                     <li><Link to="">The Movement</Link></li>
                     <li><Link to="">The Book</Link></li>
+                    <li><Link to="">Resources & Articles</Link></li>
                     <li>Contacts & Media</li>
                 </ul>
             </div>
             <div>
-                <h3 className="text-center text-sm mb-5 text-white/70">
+                <h3 className="text-center text-sm mb-5 text-black">
                     For inquiries, collaborations, or media requests, contact us at:
                 </h3>
                 <div className="flex items-center">
