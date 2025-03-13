@@ -1,4 +1,4 @@
-import { BookOpen, PencilLine, MicVocal } from "lucide-react";
+import { BookOpen, Globe, Share2 } from "lucide-react";
 
 export default function Motto() {
   return (
@@ -33,23 +33,24 @@ export default function Motto() {
 
         {/* Icons Grid */}
         <div className="mt-16 mx-auto flex max-w-6xl flex-wrap gap-4 md:gap-8">
-          <div className="flex min-w-44 flex-1 flex-col items-center justify-center gap-4 bg-white p-4 py-8 shadow-sm">
+          <a href="https://www.amazon.in/dp/B0DPC6273H" target="_blank" className="flex min-w-44 flex-1 flex-col items-center justify-center gap-4 bg-white p-4 py-8 shadow-sm">
             <div>
               <BookOpen className="size-10 text-orange-600" />
             </div>
-            <p className="font-medium text-slate-600"> Read the Book</p>
+            <p className="font-medium text-slate-600">ebook on Amazon</p>
+          </a>
+          <div className="flex min-w-44 flex-1 flex-col items-center justify-center gap-4 bg-white p-4 py-8 shadow-sm">
+            <div>
+              <Globe className="size-10 text-blue-600" />
+            </div>
+            <p className="font-medium text-slate-600">ItsMyIndia</p>
+            <a href="mailto:info@takshilafound.org" className="hover:underline">info@takshilafound.org</a>
           </div>
           <div className="flex min-w-44 flex-1 flex-col items-center justify-center gap-4 bg-white p-4 py-8 shadow-sm">
             <div>
-              <PencilLine className="size-10 text-blue-600" />
+              <Share2 className="size-10 text-green-600" />
             </div>
-            <p className="font-medium text-slate-600">Join the Movement</p>
-          </div>
-          <div className="flex min-w-44 flex-1 flex-col items-center justify-center gap-4 bg-white p-4 py-8 shadow-sm">
-            <div>
-              <MicVocal className="size-10 text-green-600" />
-            </div>
-            <p className="font-medium text-slate-600">Spread the Word</p>
+            <p className="font-medium text-slate-600">Share to anyone</p>
           </div>
         </div>
       </section>

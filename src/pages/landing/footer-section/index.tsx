@@ -40,7 +40,7 @@ export default function FooterSection() {
                 <div className="flex items-center">
                   <Mail className="lg:w-6 lg:h-4 w-5 h-4" />
                   <h2>
-                    <a href="mailto:info@takshilafound.org" className="hover:text-white/70">info@takshilafound.org</a>
+                    <a href="mailto:info@takshilafound.org" className="hover:text-slate-600">info@takshilafound.org</a>
                   </h2>
                 </div>
                 
