@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
-import RyanImage3 from "../../assets/ryan-image3.jpg";
 
 
 export default function ItsMyIndia() {
