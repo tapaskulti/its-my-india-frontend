@@ -66,7 +66,7 @@ export default function FooterSection() {
         </div>
         
       </section>
-      <div className="border border-slate-400 mt-4 py-3 text-center">&copy; copyright 2025. All Rgiths Reserved.</div>
+      <div className="border border-slate-300 mt-4 py-3 text-center">&copy; copyright 2025. All Rgiths Reserved.</div>
     </div>
     
 
