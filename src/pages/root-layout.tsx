@@ -6,7 +6,7 @@ export default function RootLayout() {
   return (
     <div className="min-h-screen">
       <header>
-      <nav className="h-24 bg-slate-100"><Navbar /></nav>
+      <nav className="h-16 bg-slate-100"><Navbar /></nav>
       </header>
       <Outlet />
       <footer><FooterSection /></footer>

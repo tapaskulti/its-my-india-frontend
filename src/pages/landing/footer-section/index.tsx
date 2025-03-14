@@ -20,11 +20,12 @@ export default function FooterSection() {
             <div className="flex justify-center text-center">
                 <ul className="flex items-center space-x-3">
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="">About Author</Link></li>
-                    <li><Link to="">The Movement</Link></li>
-                    <li><Link to="">The Book</Link></li>
-                    <li><Link to="">Resources & Articles</Link></li>
-                    <li>Contacts & Media</li>
+                    <li><Link to="about-author">About Author</Link></li>
+                    <li><Link to="/the-project">The Project</Link></li>
+                    <li><Link to="/the-book">The Book</Link></li>
+                    <li><Link to="/resources-articles">Resources & Articles</Link></li>
+                    <li><Link to="/review">Review</Link></li>
+                    <li><Link to="/contact-media">Contacts & Media</Link></li>
                 </ul>
             </div>
             <div className=" pt-10">

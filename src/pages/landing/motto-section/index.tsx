@@ -33,7 +33,7 @@ export default function Motto() {
 
         {/* Icons Grid */}
         <div className="mt-16 mx-auto flex max-w-6xl flex-wrap gap-4 md:gap-8">
-          <a href="https://www.amazon.in/dp/B0DPC6273H" target="_blank" className="flex min-w-44 flex-1 flex-col items-center justify-center gap-4 bg-white p-4 py-8 shadow-sm">
+          <a href="https://www.amazon.in/dp/B0DPC6273H" target="_blank" className="flex min-w-44 flex-1 flex-col items-center justify-center gap-4 bg-white hover:bg-white/70 hover:shadow-lg hover:scale-110 transition transform p-4 py-8 shadow-sm">
             <div>
               <BookOpen className="size-10 text-orange-600" />
             </div>
@@ -43,7 +43,7 @@ export default function Motto() {
             <div>
               <Globe className="size-10 text-blue-600" />
             </div>
-            <p className="font-medium text-slate-600">ItsMyIndia</p>
+            {/* <p className="font-medium text-slate-600">ItsMyIndia</p> */}
             <a href="mailto:info@takshilafound.org" className="hover:underline">info@takshilafound.org</a>
           </div>
           <div className="flex min-w-44 flex-1 flex-col items-center justify-center gap-4 bg-white p-4 py-8 shadow-sm">

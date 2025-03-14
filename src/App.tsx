@@ -6,8 +6,9 @@ import ErrorPage from "./pages/error-page";
 import RootLayout from "./pages/root-layout";
 import AboutAuthor from "./pages/about-author";
 import ContactMedia from "./pages/contact-media";
-import TheMovement from "./pages/the-movement"
+import TheProject from "./pages/the-project"
 import TheBook from "./pages/the-book";
+import Review from "./pages/review";
 import ResourcesArticles from "./pages/resources-articles";
 import ItsMyIndia from "./pages/its-my-india";
 
@@ -20,10 +21,11 @@ const router = createBrowserRouter([
       { index: true, element: <LandingPage /> },
       { path: "about-author", element: <AboutAuthor /> },
       { path: "contact-media", element: <ContactMedia /> },
-      { path: "the-movement", element: <TheMovement /> },
+      { path: "the-project", element: <TheProject /> },
       { path: "the-book", element: <TheBook /> },
       { path: "its-my-india", element: <ItsMyIndia /> },
       { path: "resources-articles", element: <ResourcesArticles /> },
+      { path: "review", element: <Review /> },
       { path: "success", element: <>Success</> },
       { path: "cancel", element: <>Failed</> },
     ],

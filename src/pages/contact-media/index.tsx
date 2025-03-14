@@ -1,8 +1,8 @@
 import { PhoneCall } from "lucide-react";
-import FacebookIcon from "../../assets/svg/facebook-icon";
-import TwitterIcon from "../../assets/svg/twitter-icon";
-import YoutubeIcon from "../../assets/svg/youtube-icon";
-import LinkedInIcon from "../../assets/svg/linkedin-icon";
+// import FacebookIcon from "../../assets/svg/facebook-icon";
+// import TwitterIcon from "../../assets/svg/twitter-icon";
+// import YoutubeIcon from "../../assets/svg/youtube-icon";
+// import LinkedInIcon from "../../assets/svg/linkedin-icon";
 
 
 export default function ContactMedia() {
@@ -24,7 +24,7 @@ Email: <a href="mailto:info@takshilafound.org" className="font-medium">info@taks
             </div>
 
             </div>
-            <div>
+            {/* <div>
                 Follow Us on Social Media<br /><br />
                 <div className="flex space-x-5 text-sm">
                     <a href=""><div className="flex items-center font-medium space-x-1 bg-gray-50 size-8 rounded-full border border-gray-200 hover:border-none justify-center"><FacebookIcon className="lg:w-6 lg:h-4 w-5 h-4 text-gray-500" /></div></a>
@@ -32,18 +32,18 @@ Email: <a href="mailto:info@takshilafound.org" className="font-medium">info@taks
                     <a href=""><div className="flex items-center font-medium space-x-1 bg-gray-50 size-8 rounded-full border border-gray-200 hover:border-none justify-center"><LinkedInIcon className="lg:w-6 lg:h-4 w-5 h-4 text-gray-500" /></div></a>
                     <a href=""><div className="flex items-center font-medium space-x-1 bg-gray-50 size-8 rounded-full border border-gray-200 hover:border-none justify-center"><YoutubeIcon className="lg:w-5 lg:h-5 w-5 h-4 text-gray-500" /></div></a>
                 </div>
-            </div>
+            </div> */}
             </div>
             <div>
             Book Dr. Baidya for Speaking Engagements
 Interested in hosting a talk on constitutional reform? Reach out to book Dr. Baidya for lectures, interviews, and panel discussions.<br /><br />
 
-<h2 className="text-center mt-16 text-xl font-medium">Read the Book | Join the Petition | Share the Message<br /><br />
+<h2 className="text-left mt-16 text-xl font-medium">Read the Book | Join the Petition | Share the Message<br /><br />
 <span className="font-normal text-base">“A nation’s constitution is not a fixed document—it evolves with its people.”</span></h2>
 
             </div>
             
-            <div className="w-full flex items-center justify-evenly text-center">
+            <div className="w-full flex items-center space-x-16 text-left">
             <div>
               <h2 className="text-lg font-medium">USA</h2>
 4425 Fortran Dr, <br />Suite 112
