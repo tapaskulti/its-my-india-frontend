@@ -18,7 +18,7 @@ export default function FooterSection() {
           
 
             <div className="flex justify-center text-center">
-                <ul className="flex items-center space-x-3">
+                <ul className="lg:flex lg:items-center lg:space-x-3 space-y-3 lg:space-y-0">
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="about-author">About Author</Link></li>
                     <li><Link to="/the-project">The Project</Link></li>
@@ -28,24 +28,22 @@ export default function FooterSection() {
                     <li><Link to="/contact-media">Contacts & Media</Link></li>
                 </ul>
             </div>
-            <div className=" pt-10">
+            <div className="pt-10">
                 <h3 className="text-left text-sm mb-3 text-black">
                     For inquiries, collaborations, or media requests, contact us at:
                 </h3>
                 <div className="">
-                <div className="flex items-center space-x-5">
-                  <div className="flex items-center my-2"><PhoneCall className="lg:w-6 lg:h-4 w-5 h-4" /><h2>India: +91 77991 12264</h2></div>
-                  <div className="flex items-center"><PhoneCall className="lg:w-6 lg:h-4 w-5 h-4" /><h2>USA: +1-408-230-1553</h2></div>
-              </div>
-                
-                <div className="flex items-center">
-                  <Mail className="lg:w-6 lg:h-4 w-5 h-4" />
-                  <h2>
-                    <a href="mailto:info@takshilafound.org" className="hover:text-slate-600">info@takshilafound.org</a>
-                  </h2>
-                </div>
-                
-              
+                  <div className="md:flex md:items-center md:space-x-5 space-y-3 md:space-y-0">
+                    <div className="flex items-center my-2"><PhoneCall className="lg:w-6 lg:h-4 w-5 h-4" /><h2>India: +91 77991 12264</h2></div>
+                    <div className="flex items-center"><PhoneCall className="lg:w-6 lg:h-4 w-5 h-4" /><h2>USA: +1-408-230-1553</h2></div>
+                  </div>
+                  
+                  <div className="flex items-center mt-2.5 md:mt-0">
+                    <Mail className="lg:w-6 lg:h-4 w-5 h-4" />
+                    <h2>
+                      <a href="mailto:info@takshilafound.org" className="hover:text-slate-600">info@takshilafound.org</a>
+                    </h2>
+                  </div>
               </div>
             </div>
                 <div>
