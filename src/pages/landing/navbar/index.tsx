@@ -7,6 +7,91 @@ import BuyNow from "../../../components/buy-now";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // const loadScript = (src: string) => {
+  //   return new Promise((resolve) => {
+  //     const script = document.createElement("script");
+  //     script.src = src;
+  //     script.onload = () => {
+  //       resolve(true);
+  //     };
+  //     script.onerror = () => {
+  //       resolve(false);
+  //     };
+  //     document.body.appendChild(script);
+  //   });
+  // };
+
+  // // handlePayment Function
+  // const handlePayment = async (amount: number, itemName: string) => {
+  //   try {
+  //     const res = await fetch(
+  //       `${import.meta.env.VITE_BACKEND_URL}/api/createOrder`,
+  //       {
+  //         method: "POST",
+  //         headers: {
+  //           "content-type": "application/json",
+  //         },
+  //         body: JSON.stringify({
+  //           amount,
+  //           bookId: itemName,
+  //         }),
+  //       },
+  //     );
+
+  //     const data = await res.json();
+  //     handlePaymentVerify(data.data);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+
+  // // handlePaymentVerify Function
+  // const handlePaymentVerify = async (data: any) => {
+  //   const options = {
+  //     key: import.meta.env.RAZORPAY_KEY_ID,
+  //     amount: data.amount,
+  //     currency: data.currency,
+  //     name: "Dr. Ryan Baidya", // Payment to Name
+  //     description: "",
+  //     order_id: data.id,
+  //     handler: async (response: any) => {
+  //       try {
+  //         const res = await fetch(
+  //           `${import.meta.env.VITE_BACKEND_URL}/api/verifyPayment`,
+  //           {
+  //             method: "POST",
+  //             headers: {
+  //               "content-type": "application/json",
+  //             },
+  //             body: JSON.stringify({
+  //               razorpay_order_id: response.razorpay_order_id,
+  //               razorpay_payment_id: response.razorpay_payment_id,
+  //               razorpay_signature: response.razorpay_signature,
+  //             }),
+  //           },
+  //         );
+
+  //         const verifyData = await res.json();
+
+  //         if (verifyData.message) {
+  //           toast.success(verifyData.message);
+  //         }
+  //       } catch (error) {
+  //         console.log(error);
+  //       }
+  //     },
+  //     theme: {
+  //       color: "#5f63b8",
+  //     },
+  //   };
+  //   const rzp1 = new (window as any).Razorpay(options);
+  //   rzp1.open();
+  // };
+
+  // useEffect(() => {
+  //   loadScript("https://checkout.razorpay.com/v1/checkout.js");
+  // }, []);
+
   return (
     <div className="fixed top-0 left-0 w-full bg-slate-100 shadow-sm z-50">
       <div className="mx-auto flex max-w-6xl justify-between py-5 px-4 lg:px-0">
