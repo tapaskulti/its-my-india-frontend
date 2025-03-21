@@ -70,10 +70,10 @@ export default function ResourcesArticles() {
                     </div>     
                   </div>
 
-                  <div className="my-4 leading-8">
+                  {/* <div className="my-4 leading-8">
                     <h2 className="font-medium pb-1">Download Whitepapers & Research Reports</h2>
                     
-                  </div>
+                  </div> */}
 
                 </div>
 
@@ -430,6 +430,14 @@ export default function ResourcesArticles() {
                         <a href="https://myind.net/Home/viewArticle/in-the-quest-for-the-purpose-of-education" target="_blank" className="font-medium text-lg text-blue-500 hover:underline hover:text-blue-700">In the Quest for the Purpose of Education</a>
                       </div> */}
                     </div>
+                  </div>
+
+                  <div className="py-10">
+                    <h2 className="text-2xl pb-3">
+                    Various Articles on Medium.com
+                    </h2>
+                    <a href="https://medium.com/@eduzakka" target="_blank" className="text-lg font-medium text-blue-500 hover:underline hover:text-blue-700">https://medium.com/@eduzakka</a>                        
+                    
                   </div>
 
                 </div>

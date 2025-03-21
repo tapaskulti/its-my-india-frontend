@@ -1,4 +1,5 @@
 import { BookOpen, Globe, Share2 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Motto() {
   return (
@@ -33,25 +34,29 @@ export default function Motto() {
 
         {/* Icons Grid */}
         <div className="mt-16 mx-auto flex max-w-6xl flex-wrap gap-4 md:gap-8">
-          <a href="https://www.amazon.in/dp/B0DPC6273H" target="_blank" className="flex min-w-44 flex-1 flex-col items-center justify-center gap-4 bg-white hover:bg-white/70 hover:shadow-lg hover:scale-110 transition transform p-4 py-8 shadow-sm">
+          <a href="https://www.amazon.in/dp/B0DPC6273H" target="_blank" className="flex flex-grow w-1/3 flex-1 flex-col items-center justify-center gap-4 bg-white hover:bg-white/70 hover:shadow-lg hover:scale-110 transition transform p-4 py-8 shadow-sm">
             <div>
               <BookOpen className="size-10 text-orange-600" />
             </div>
             <p className="font-medium text-slate-600">ebook on Amazon</p>
           </a>
-          <div className="flex min-w-44 flex-1 flex-col items-center justify-center gap-4 bg-white p-4 py-8 shadow-sm">
+          <Link to="/its-my-india" className="flex flex-grow min-w-1/3 flex-1 flex-col items-center justify-center gap-4 bg-white   p-4 py-8 hover:shadow-lg hover:scale-110 transition transform shadow-sm">
+          
+            
+              <div className="flex justify-center">
+                <Share2 className="size-10 text-green-600" />
+              </div>
+              <p className="font-medium text-slate-600">ItsMyIndia</p>
+            
+          
+          </Link>
+          <div className="flex flex-grow w-1/3 flex-1 flex-col items-center justify-center gap-4 bg-white hover:bg-white/70 hover:shadow-lg hover:scale-110 transition transform p-4 py-8 shadow-sm">
             <div>
               <Globe className="size-10 text-blue-600" />
             </div>
             {/* <p className="font-medium text-slate-600">ItsMyIndia</p> */}
-            <a href="mailto:info@takshilafound.org" className="hover:underline">info@takshilafound.org</a>
-          </div>
-          <div className="flex min-w-44 flex-1 flex-col items-center justify-center gap-4 bg-white p-4 py-8 shadow-sm">
-            <div>
-              <Share2 className="size-10 text-green-600" />
-            </div>
-            <p className="font-medium text-slate-600">Share to anyone</p>
-          </div>
+            <a href="mailto:info@takshilafound.org">info@takshilafound.org</a>
+          </div>          
         </div>
       </section>
     </div>
