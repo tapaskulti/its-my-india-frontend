@@ -1,4 +1,4 @@
-import { BookOpen, Globe, Share2 } from "lucide-react";
+import { BookOpen, Globe, Mail, Share2 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Motto() {
@@ -44,7 +44,7 @@ export default function Motto() {
           
             
               <div className="flex justify-center">
-                <Share2 className="size-10 text-green-600" />
+                <Globe className="size-10 text-green-600" />
               </div>
               <p className="font-medium text-slate-600">ItsMyIndia</p>
             
@@ -52,7 +52,7 @@ export default function Motto() {
           </Link>
           <div className="flex flex-grow w-1/3 flex-1 flex-col items-center justify-center gap-4 bg-white hover:bg-white/70 hover:shadow-lg hover:scale-110 transition transform p-4 py-8 shadow-sm">
             <div>
-              <Globe className="size-10 text-blue-600" />
+              <Mail className="size-10 text-blue-600" />
             </div>
             {/* <p className="font-medium text-slate-600">ItsMyIndia</p> */}
             <a href="mailto:info@takshilafound.org">info@takshilafound.org</a>
