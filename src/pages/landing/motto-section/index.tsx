@@ -50,7 +50,7 @@ export default function Motto() {
             
           
           </Link>
-          <div className="flex flex-grow w-1/3 flex-1 flex-col items-center justify-center gap-4 bg-white hover:bg-white/70 hover:shadow-lg hover:scale-110 transition transform p-4 py-8 shadow-sm">
+          <div className="cursor-pointer flex flex-grow w-1/3 flex-1 flex-col items-center justify-center gap-4 bg-white hover:bg-white/70 hover:shadow-lg hover:scale-110 transition transform p-4 py-8 shadow-sm">
             <div>
               <Mail className="size-10 text-blue-600" />
             </div>
