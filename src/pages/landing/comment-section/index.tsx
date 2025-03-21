@@ -105,7 +105,7 @@ export default function CommentSection() {
             <div className="flex-1" aria-hidden="true" />
             <div>
               <motion.div className="max-w-[39rem] h-[22rem] overflow-y-auto rounded-lg bg-white p-8 shadow-sm">
-                <p className="mb-8 text-center">
+                <p className="mb-8 text-left">
                   <Quote className="inline size-3 -translate-y-1/2 rotate-180 fill-black" />
                   &nbsp;
                   {DATA[idx].comment}
@@ -113,7 +113,7 @@ export default function CommentSection() {
                   &nbsp;
                 </p>
 
-                <div className="text-center">
+                <div className="text-left">
                   <h4 className="text-base font-bold">{DATA[idx].name}</h4>
                   <p className="text-sm text-gray-600">
                     {DATA[idx].designation}

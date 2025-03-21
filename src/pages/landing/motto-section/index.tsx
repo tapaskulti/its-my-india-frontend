@@ -1,4 +1,4 @@
-import { BookOpen, Globe, Mail, Share2 } from "lucide-react";
+import { BookOpen, Globe, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Motto() {
