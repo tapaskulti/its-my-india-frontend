@@ -1,4 +1,4 @@
-import RyanImage4 from "../../assets/ryan-image4.jpg"
+import RyanImage5 from "../../assets/ryan-image4.jpg"
 // import { Share2, User } from "lucide-react";
 
 export default function AboutAuthor() {
@@ -7,9 +7,9 @@ export default function AboutAuthor() {
       <section id="moto" className="mx-4 flex md:mx-8">
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-8">
           <div className="flex w-full flex-col-reverse flex-wrap-reverse items-center justify-center gap-8 sm:flex-row">            
-            <div className="flex-1">
-              <div className="relative mx-auto max-w-48 flex-1 md:min-w-48 xl:min-w-48">
-                <img src={RyanImage4} alt="Ryan Image" />
+            <div className="">
+              <div className="relative mx-auto flex-1">
+                <img src={RyanImage5} alt="Ryan Image" />
                 <p className="absolute inset-x-0 -bottom-10 p-2 text-center text-lg font-medium text-slate-950">
                   Dr. Ryan Baidya
                 </p>

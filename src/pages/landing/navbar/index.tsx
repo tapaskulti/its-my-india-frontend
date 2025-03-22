@@ -97,7 +97,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-6xl justify-between py-5 px-4 lg:px-0">
         {/* Logo */}
         <Link to="/its-my-india">
-          <h2 className="text-2xl font-medium text-slate-600">ItsMyIndia</h2>
+          <h2 className="text-4xl font-medium text-slate-600">ItsMyIndia</h2>
         </Link>
 
         {/* Desktop Navigation */}
@@ -185,7 +185,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link to="/resources-articles" onClick={() => setIsOpen(false)}>
-                Resources & Articles
+                Articles
               </Link>
             </li>
             <li>
@@ -195,7 +195,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link to="/contact-media" onClick={() => setIsOpen(false)}>
-                Contacts & Media
+                Contacts
               </Link>
             </li>
             <li>

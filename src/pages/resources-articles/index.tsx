@@ -28,44 +28,44 @@ export default function ResourcesArticles() {
       <section id="moto" className="mx-4 flex md:mx-8">
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-8">
         <h2 className="text-2xl">Articles</h2>
-            <div className="w-full flex justify-between space-x-3 mt-10">            
+            <div className="w-full flex justify-between space-x-3 mt-5">            
               <div className="text-base">
-                <div className="mt-5 text-base">
-                  <div className="my-4 leading-8">
+                <div className="flex items-start justify-between space-x-4 mt-5 text-base">
+                  <div className="my-4 leading-7">
                     <h2 className="font-medium pb-1">Must-Read Articles</h2>
-                    <div className="flex items-center space-x-2">
-                      <CheckCheck className="w-5 h-auto" />
+                    <div className="flex items-start space-x-2">
+                      <CheckCheck className="w-5 h-auto pt-0.5" />
                       <span>The Flaws of India’s Current Constitution</span>
                     </div>
-                    <div className="flex items-center space-x-2">
-                      <CheckCheck className="w-5 h-auto" />
+                    <div className="flex items-start space-x-2">
+                      <CheckCheck className="w-5 h-auto pt-0.5" />
                       <span>Why India Needs a New Penal Code</span>
                     </div>
 
-                    <div className="flex items-center space-x-2">
-                      <CheckCheck className="w-5 h-auto" />
+                    <div className="flex items-start space-x-2">
+                      <CheckCheck className="w-5 h-auto pt-0.5" />
                       <span>The Role of Indigenous Governance in Modern Democracy</span>
                     </div>
 
-                    <div className="flex items-center space-x-2">
-                      <CheckCheck className="w-5 h-auto" />
+                    <div className="flex items-start space-x-2">
+                      <CheckCheck className="w-5 h-auto pt-0.5" />
                       <span>Lessons from Other Democracies: How They Reformed Their Constitutions</span>
                     </div>              
                   </div>
 
-                  <div className="my-4 leading-8">
+                  <div className="my-4 leading-7">
                     <h2 className="font-medium pb-1">Comparative Studies & Research</h2>
-                    <div className="flex items-center space-x-2">
-                      <CheckCheck className="w-5 h-auto" />
+                    <div className="flex items-start space-x-2">
+                      <CheckCheck className="w-5 h-auto pt-0.5" />
                       <span>How the U.S. and India Differ in Constitutional Amendments</span>
                     </div>
-                    <div className="flex items-center space-x-2">
-                      <CheckCheck className="w-5 h-auto" />
+                    <div className="flex items-start space-x-2">
+                      <CheckCheck className="w-5 h-auto pt-0.5" />
                       <span>The Colonial Influence on Judicial and Law Enforcement Systems</span>
                     </div>
 
-                    <div className="flex items-center space-x-2">
-                      <CheckCheck className="w-5 h-auto" />
+                    <div className="flex items-start space-x-2">
+                      <CheckCheck className="w-5 h-auto pt-0.5" />
                       <span>Why a New Constitution is the Key to a Developed Bharat</span>
                     </div>     
                   </div>
@@ -77,7 +77,7 @@ export default function ResourcesArticles() {
 
                 </div>
 
-                <div className="mt-16 px-6 py-2 border border-gray-300 rounded-md">
+                <div className="mt-5 px-6 py-2 border border-gray-300 rounded-md">
 
                   {/* ************ article 1 ************ */}
                   <div className="flex items-start space-x-5 border-b border-gray-200 py-4">
