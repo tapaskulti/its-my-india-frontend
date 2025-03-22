@@ -27,7 +27,7 @@ export default function ResourcesArticles() {
     <div className="bg-white py-16">
       <section id="moto" className="mx-4 flex md:mx-8">
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-8">
-        <h2 className="text-2xl">Resources & Articles</h2>
+        <h2 className="text-2xl">Articles</h2>
             <div className="w-full flex justify-between space-x-3 mt-10">            
               <div className="text-base">
                 <div className="mt-5 text-base">

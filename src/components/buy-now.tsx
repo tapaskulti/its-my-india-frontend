@@ -1,14 +1,15 @@
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
+import ProductImage from "../assets/book-image.jpeg"
 
 import {
   Dialog,
-  DialogClose,
+  // DialogClose,
   DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
+  // DialogDescription,
+  // DialogFooter,
+  // DialogHeader,
+  // DialogTitle,
   DialogTrigger,
 } from "./ui/dialog";
 import { useEffect, useState } from "react";
@@ -34,6 +35,7 @@ export default function BuyNow({ TriggerComponent }: Props) {
     });
   };
 
+  
   useEffect(() => {
     loadScript("https://checkout.razorpay.com/v1/checkout.js");
   }, []);
@@ -125,50 +127,181 @@ export default function BuyNow({ TriggerComponent }: Props) {
   return (
     <Dialog>
       <DialogTrigger>{TriggerComponent}</DialogTrigger>
-      <DialogContent className="bg-white sm:max-w-md">
-        <DialogHeader>
-          <DialogTitle>Input Coupon</DialogTitle>
-          <DialogDescription>
-            Anyone who has this coupon will be able to get discount.
-          </DialogDescription>
-        </DialogHeader>
-        <div className="flex items-center space-x-2">
-          <div className="flex flex-col items-center space-x-2">
-            <div className="grid flex-1 gap-2">
-              <Label htmlFor="link" className="sr-only">
-                Link
-              </Label>
-              <div className="flex items-center space-x-2">
-                <Input
-                id="link"
-                value={coupon}
-                onChange={(e) => setCoupon(e.target.value)}
-                className="w-40"
-              />
+      <DialogContent className="w-[900px] bg-gray-200 max-w-full">
+  {/* <DialogHeader>
+    <DialogTitle>Buy Now</DialogTitle>
+    <DialogDescription>
+      Anyone who has this coupon will be able to get a discount.
+    </DialogDescription>
+  </DialogHeader> */}
 
-            <button onClick={applyCouponHandler} className="text-sm text-green-600">Check Coupon</button>
-              </div>
-              <h2 className="text-xs text-red-600">{couponMessage}</h2>
-              
-            </div>
-            <div className="flex items-center space-x-2 w-full my-6">
-            <DialogFooter className="sm:justify-start">
+  <div className="flex space-x-4">
+    {/* Left Section - You can place any custom content here */}
+    <div className="w-3/5">
+    <h3 className="font-medium text-sm xl:text-lg mb-3">Shipping Address</h3>
+    <div className="border rounded-md p-4 bg-gray-50">
+      <div className="mb-3">
+        <label htmlFor="fullName" className="text-sm font-medium text-gray-700">Full Name</label>
+        <input
+          id="fullName"
+          type="text"
+          className="border border-slate-200 text-sm rounded-md px-3 py-3 w-full mt-1 focus:outline-none"
+          placeholder="Your Full Name"
+        />
+      </div>
+
+      <div className="mb-3">
+        <label htmlFor="contactNumber" className="text-sm font-medium text-gray-700">Contact Number</label>
+        <input
+          id="contactNumber"
+          type="text"
+          className="border border-slate-200 text-sm rounded-md px-3 py-3 w-full mt-1 focus:outline-none"
+          placeholder="Your Contact Number"
+        />
+      </div>
+
+      <div className="mb-3">
+        <label htmlFor="email" className="text-sm font-medium text-gray-700">Email ID</label>
+        <input
+          id="email"
+          type="email"
+          className="border border-slate-200 text-sm rounded-md px-3 py-3 w-full mt-1 focus:outline-none"
+          placeholder="Your Email ID"
+        />
+      </div>
+
+      <div className="mb-3">
+        <label htmlFor="address" className="text-sm font-medium text-gray-700">Address</label>
+        <textarea
+          id="address"
+          className="border border-slate-200 text-sm rounded-md px-3 py-3 w-full mt-1 focus:outline-none"
+          placeholder="Your Address"
+        ></textarea>
+      </div>
+    </div>
+  </div>
+
+    {/* Right Section - Existing coupon input and actions */}
+    <div className="w-2/5">
+      {/* <div className="grid gap-2">
+        <Label htmlFor="link" className="sr-only">
+          Coupon Code
+        </Label>
+        <div className="flex items-center space-x-2">
+          <Input
+            id="link"
+            value={coupon}
+            onChange={(e) => setCoupon(e.target.value)}
+            className="w-full"
+          />
+          <button onClick={applyCouponHandler} className="text-sm text-green-600">
+            Check
+          </button>
+        </div>
+        <h2 className="text-xs text-red-600">{couponMessage}</h2>
+      </div> */}
+
+      {/* Product Section */}
+      <h2 className="font-medium text-sm xl:text-lg mb-3">Order Summary</h2>
+    <div className="border rounded-md p-4 mb-2 bg-gray-50 flex items-start justify-between">
+      <img src={ProductImage} alt="Product" className="w-12 h-auto object-cover mb-4" />
+      <div>
+        <h4 className="font-medium text-sm mb-[2px]">Book: ItsMyIndia</h4>
+        <p className="text-xs text-gray-500 mb-4">Quantity: 1</p>
+      </div>
+      <p className="text-lg font-semibold">₹475</p>
+    </div>
+
+
+    {/* Coupon Section */}
+    <div className="grid gap-2 mb-3 border rounded-md p-4 bg-gray-50">
+      <Label htmlFor="coupon" className="sr-only">Coupon Code</Label>
+      {/* <div className="flex items-center space-x-2">
+        <Input
+          id="coupon"
+          value={coupon}
+          onChange={(e) => setCoupon(e.target.value)}
+          className="w-full"
+          placeholder="Enter Coupon Code"
+        />
+        <button onClick={applyCouponHandler} className="text-sm text-green-600">
+          Apply
+        </button>
+      </div> */}
+      {/* Coupon Section */}
+    <div className="grid gap-2 mb-2">
+      <Label htmlFor="coupon" className="sr-only">Coupon Code</Label>
+      <div className="flex items-center space-x-2">
+        <Input
+          id="coupon"
+          value={coupon}
+          onChange={(e) => setCoupon(e.target.value)}
+          className="w-full"
+          placeholder="Enter Coupon Code"
+        />
+        <button onClick={applyCouponHandler} className="text-sm text-green-600">
+          Apply
+        </button>
+      </div>
+      <h2 className="text-xs text-red-600">{couponMessage}</h2>
+    </div>
+
+    
+
+    
+    
+      <div className="flex justify-between text-sm">
+        <span>Subtotal</span>
+        <span>₹475</span>
+      </div>
+      <div className="flex justify-between text-sm">
+        <span>Shipping Charge</span>
+        <span>₹19.75</span>
+      </div>
+      <div className="flex justify-between text-sm">
+        <span>Coupon Discount</span>
+        <span className="font-semif">-₹71.25</span>
+      </div>
+      <div className="flex justify-between text-lg font-semibold">
+        <span>Total Amount</span>
+        <span>₹403.75</span>
+      </div>
+    </div>
+
+    {/* Order Button */}
+    <div className="flex items-center space-x-2">
+      <button
+        type="button"
+        onClick={handlePayment}
+        className="text-sm px-6 py-3 rounded-md bg-[#afc584] font-semibold text-white capitalize hover:bg-[#b8ce8d] sm:ml-0 sm:mr-auto w-full"
+      >
+        Place Order
+      </button>
+    </div>
+
+      {/* <div className="flex items-center space-x-2 mt-6">
+        <DialogFooter className="sm:justify-start">
           <DialogClose asChild>
-            <button type="button" className="bg-gray-200 text-black text-sm px-6 py-2 rounded-full">Close</button>
+            <button
+              type="button"
+              className="bg-gray-200 text-black text-sm px-6 py-2 rounded-full"
+            >
+              Close
+            </button>
           </DialogClose>
         </DialogFooter>
-              <button
-              type="button"
-              onClick={handlePayment}
-              className="text-sm px-6 py-2 rounded-full bg-[#afc584] font-semibold text-white capitalize hover:bg-[#b8ce8d] sm:ml-0 sm:mr-auto"
-            >
-              buy now
-            </button>
-            </div>
-          </div>
-        </div>
-        
-      </DialogContent>
+        <button
+          type="button"
+          onClick={handlePayment}
+          className="text-sm px-6 py-2 rounded-full bg-[#afc584] font-semibold text-white capitalize hover:bg-[#b8ce8d] sm:ml-0 sm:mr-auto"
+        >
+          Buy Now
+        </button>
+      </div> */}
+    </div>
+  </div>
+</DialogContent>
+
     </Dialog>
   );
 }
