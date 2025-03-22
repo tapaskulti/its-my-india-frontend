@@ -35,7 +35,7 @@ export default function BuyNow({ TriggerComponent }: Props) {
     });
   };
 
-  
+
   useEffect(() => {
     loadScript("https://checkout.razorpay.com/v1/checkout.js");
   }, []);
@@ -139,7 +139,7 @@ export default function BuyNow({ TriggerComponent }: Props) {
     {/* Left Section - You can place any custom content here */}
     <div className="w-3/5">
     <h3 className="font-medium text-sm xl:text-lg mb-3">Shipping Address</h3>
-    <div className="border rounded-md p-4 bg-gray-50">
+    <div className="border rounded-md p-5 bg-gray-50">
       <div className="mb-3">
         <label htmlFor="fullName" className="text-sm font-medium text-gray-700">Full Name</label>
         <input
@@ -203,7 +203,7 @@ export default function BuyNow({ TriggerComponent }: Props) {
 
       {/* Product Section */}
       <h2 className="font-medium text-sm xl:text-lg mb-3">Order Summary</h2>
-    <div className="border rounded-md p-4 mb-2 bg-gray-50 flex items-start justify-between">
+    <div className="border rounded-md p-5 mb-2 bg-gray-50 flex items-start justify-between">
       <img src={ProductImage} alt="Product" className="w-12 h-auto object-cover mb-4" />
       <div>
         <h4 className="font-medium text-sm mb-[2px]">Book: ItsMyIndia</h4>
@@ -214,7 +214,7 @@ export default function BuyNow({ TriggerComponent }: Props) {
 
 
     {/* Coupon Section */}
-    <div className="grid gap-2 mb-3 border rounded-md p-4 bg-gray-50">
+    <div className="grid gap-2 mb-3 border rounded-md p-5 bg-gray-50">
       <Label htmlFor="coupon" className="sr-only">Coupon Code</Label>
       {/* <div className="flex items-center space-x-2">
         <Input

@@ -124,7 +124,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link to="/resources-articles" className="hover:text-[#7e9452]">
-              Resources & Articles
+              Articles
             </Link>
           </li>
           <li>
@@ -134,7 +134,8 @@ export default function Navbar() {
           </li>
           <li>
             <Link to="/contact-media" className="hover:text-[#7e9452]">
-              Contacts & Media
+              {/* Contacts & Media */}
+              Contacts
             </Link>
           </li>
           <li>
