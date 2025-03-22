@@ -1,4 +1,4 @@
-import RyanImage5 from "../../assets/ryan-image4.jpg"
+import RyanImage5 from "../../assets/ryan-image5.jpg"
 // import { Share2, User } from "lucide-react";
 
 export default function AboutAuthor() {

@@ -9,7 +9,7 @@ import ContactMedia from "./pages/contact-media";
 import TheProject from "./pages/the-project"
 import TheBook from "./pages/the-book";
 import Review from "./pages/review";
-import ResourcesArticles from "./pages/resources-articles";
+import ResourcesArticles from "./pages/articles";
 import ItsMyIndia from "./pages/its-my-india";
 
 const router = createBrowserRouter([
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
       { path: "the-project", element: <TheProject /> },
       { path: "the-book", element: <TheBook /> },
       { path: "its-my-india", element: <ItsMyIndia /> },
-      { path: "resources-articles", element: <ResourcesArticles /> },
+      { path: "articles", element: <ResourcesArticles /> },
       { path: "review", element: <Review /> },
       { path: "success", element: <>Success</> },
       { path: "cancel", element: <>Failed</> },
