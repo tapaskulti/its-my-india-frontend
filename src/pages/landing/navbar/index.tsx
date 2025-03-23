@@ -123,7 +123,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/resources-articles" className="hover:text-[#7e9452]">
+            <Link to="/articles" className="hover:text-[#7e9452]">
               Articles
             </Link>
           </li>
@@ -184,7 +184,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/resources-articles" onClick={() => setIsOpen(false)}>
+              <Link to="/articles" onClick={() => setIsOpen(false)}>
                 Articles
               </Link>
             </li>

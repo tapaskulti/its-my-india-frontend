@@ -22,7 +22,7 @@ import article020 from '../../assets/article020.jpg'
 import article021 from '../../assets/article021.jpg'
 
 
-export default function ResourcesArticles() {
+export default function Articles() {
   return (
     <div className="bg-white py-16">
       <section id="moto" className="mx-4 flex md:mx-8">

@@ -231,6 +231,8 @@ export default function BuyNow({ TriggerComponent }: Props) {
       {/* Coupon Section */}
     <div className="grid gap-2 mb-2">
       <Label htmlFor="coupon" className="sr-only">Coupon Code</Label>
+      <div>
+      <h2 className="text-xs pb-2">Do not have coupon? Click 'By Now' to proceed.</h2>
       <div className="flex items-center space-x-2">
         <Input
           id="coupon"
@@ -242,7 +244,7 @@ export default function BuyNow({ TriggerComponent }: Props) {
         <button onClick={applyCouponHandler} className="text-sm text-green-600">
           Apply
         </button>
-      </div>
+      </div></div>
       <h2 className="text-xs text-red-600">{couponMessage}</h2>
     </div>
 

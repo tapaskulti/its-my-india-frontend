@@ -23,7 +23,7 @@ export default function FooterSection() {
                     <li><Link to="about-author">About Author</Link></li>
                     <li><Link to="/the-project">The Project</Link></li>
                     <li><Link to="/the-book">The Book</Link></li>
-                    <li><Link to="/resources-articles">Resources & Articles</Link></li>
+                    <li><Link to="/articles">Articles</Link></li>
                     <li><Link to="/review">Review</Link></li>
                     <li><Link to="/contact-media">Contacts & Media</Link></li>
                 </ul>
