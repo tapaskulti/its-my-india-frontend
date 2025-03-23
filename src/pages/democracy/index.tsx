@@ -302,15 +302,12 @@ export default function Democracy() {
                     </h3>
                     <br /><br />
                     <h2>
-                    Despite these challenges, democracy remains a dynamic and evolving system that can be strengthened through civic education, active public participation, and institutional reforms.<br /><br />
-In short, Democracy is more than just a system of government—it is a philosophy of governance that upholds human dignity, freedom, and equality. While the ideal of democracy is powerful, its implementation can be complex and challenging. <br /><br />
-While democracy faces significant challenges, it remains the most effective system for ensuring representation, accountability, and the protection of human rights. Ongoing efforts are required to strengthen democratic institutions, protect civil liberties, and ensure that all citizens have an equal opportunity to participate in the democratic process. <br /><br />
-Democratic systems are not static; they evolve and adapt over time. It allows societies to adapt, progress, and correct mistakes through the power of the people. In essence, democracy is a continuous project, a commitment to empowering people and creating a society where everyone's voice matters.  Therefore, democracy to thrive, it requires informed, engaged, and responsible citizens who actively participate in shaping their societies. In the words of Abraham Lincoln, democracy is truly “government of the people, by the people, for the people.”
-
+                        Despite these challenges, democracy remains a dynamic and evolving system that can be strengthened through civic education, active public participation, and institutional reforms.<br /><br />
+                        In short, Democracy is more than just a system of government—it is a philosophy of governance that upholds human dignity, freedom, and equality. While the ideal of democracy is powerful, its implementation can be complex and challenging. <br /><br />
+                        While democracy faces significant challenges, it remains the most effective system for ensuring representation, accountability, and the protection of human rights. Ongoing efforts are required to strengthen democratic institutions, protect civil liberties, and ensure that all citizens have an equal opportunity to participate in the democratic process. <br /><br />
+                        Democratic systems are not static; they evolve and adapt over time. It allows societies to adapt, progress, and correct mistakes through the power of the people. In essence, democracy is a continuous project, a commitment to empowering people and creating a society where everyone's voice matters.  Therefore, democracy to thrive, it requires informed, engaged, and responsible citizens who actively participate in shaping their societies. In the words of Abraham Lincoln, democracy is truly “government of the people, by the people, for the people.”
                     </h2>
-
-                </h2>
-                
+                </h2>                
               
             </div>            
           </div>
