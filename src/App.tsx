@@ -11,6 +11,8 @@ import TheBook from "./pages/the-book";
 import Review from "./pages/review";
 import Articles from "./pages/articles";
 import ItsMyIndia from "./pages/its-my-india";
+import Democracy from "./pages/democracy";
+// import Constitution from "./pages/constitution"
 
 const router = createBrowserRouter([
   {
@@ -24,8 +26,10 @@ const router = createBrowserRouter([
       { path: "the-project", element: <TheProject /> },
       { path: "the-book", element: <TheBook /> },
       { path: "its-my-india", element: <ItsMyIndia /> },
-      { path: "articles", element: <Articles /> },
+      { path: "articles", element: <Articles /> },      
       { path: "review", element: <Review /> },
+      { path: "democracy", element: <Democracy /> },
+      // { path: "constitution", element: <Constitution /> },
       { path: "success", element: <>Success</> },
       { path: "cancel", element: <>Failed</> },
     ],

@@ -133,6 +133,16 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
+            <Link to="/constitution" className="hover:text-[#7e9452]">
+              Constitution?
+            </Link>
+          </li>
+          <li>
+            <Link to="/democracy" className="hover:text-[#7e9452]">
+              Democracy?
+            </Link>
+          </li>
+          <li>
             <Link to="/contact-media" className="hover:text-[#7e9452]">
               {/* Contacts & Media */}
               Contacts
@@ -191,6 +201,15 @@ export default function Navbar() {
             <li>
               <Link to="/review" onClick={() => setIsOpen(false)}>
                 Review
+              </Link>
+            </li>
+            <li>
+              <Link to="/constitution" onClick={() => setIsOpen(false)}>
+                Constitution?
+              </Link>
+            </li><li>
+              <Link to="/democracy" onClick={() => setIsOpen(false)}>
+                Democracy?
               </Link>
             </li>
             <li>

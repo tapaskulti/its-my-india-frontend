@@ -25,7 +25,9 @@ export default function FooterSection() {
                     <li><Link to="/the-book">The Book</Link></li>
                     <li><Link to="/articles">Articles</Link></li>
                     <li><Link to="/review">Review</Link></li>
-                    <li><Link to="/contact-media">Contacts & Media</Link></li>
+                    <li><Link to="/constitution">Constitution?</Link></li>
+                    <li><Link to="/democracy">Democracy?</Link></li>
+                    <li><Link to="/contact-media">Contacts</Link></li>
                 </ul>
             </div>
             <div className="pt-10">
