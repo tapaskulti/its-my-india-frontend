@@ -44,7 +44,7 @@ export default function AuthorSection() {
           </div>
           <Link
             to={"/about-author"}
-            className="mt-16 mx-auto flex w-full max-w-64 items-center justify-center rounded-full bg-[#afc584] px-12 py-3 font-semibold capitalize text-white hover:bg-[#b8ce8d]"
+            className="mt-16 mx-auto flex w-full max-w-64 items-center justify-center rounded-full bg-[#bcd448] px-12 py-3 font-semibold capitalize text-white hover:bg-[#b8ce8d]"
           >
             Know More
           </Link>
