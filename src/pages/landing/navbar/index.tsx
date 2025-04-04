@@ -152,7 +152,7 @@ export default function Navbar() {
             <Toaster />
             <BuyNow
               TriggerComponent={
-                <button className="rounded-lg bg-[#afc584] px-2 py-2 text-sm text-white hover:bg-[#b8ce8d]">
+                <button className="rounded-lg bg-[#bcd448] px-2 py-2 text-sm text-white hover:bg-[#b8ce8d]">
                   Buy Now
                 </button>
               }
@@ -221,7 +221,7 @@ export default function Navbar() {
               <BuyNow
                 TriggerComponent={
                   <button
-                    className="rounded-lg bg-[#afc584] px-3 py-2 text-sm text-white hover:bg-[#b8ce8d]"
+                    className="rounded-lg bg-[#bcd448] px-3 py-2 text-sm text-white hover:bg-[#b8ce8d]"
                     onClick={() => setIsOpen(false)}
                   >
                     Buy Now
