@@ -4,6 +4,14 @@ import { Label } from "./ui/label";
 import ProductImage from "../assets/book-image.jpeg";
 
 import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "./ui/select";
+
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
@@ -22,6 +30,17 @@ export default function BuyNow({ TriggerComponent }: Props) {
   const [isContactCorrect, setIsContactCorrect] = React.useState(false);
   const [isMailCorrect, setIsMailCorrect] = React.useState(false);
   const [isAddressCorrect, setIsAdressCorrect] = React.useState(false);
+
+  const [discoutPercentage, setDiscountPercentage] = useState(0);
+
+  const shippingCharges = [110, 315, 540];
+  const [shippingCharge, setShippingCharge] = React.useState(
+    shippingCharges[0],
+  );
+
+  const subTotal = +import.meta.env.VITE_BOOK_NOW;
+  const couponDiscount = (subTotal * discoutPercentage) / 100;
+  const totalAmount = +(subTotal - couponDiscount).toFixed(2) + +shippingCharge;
 
   const loadScript = (src: string) => {
     return new Promise((resolve) => {
@@ -43,12 +62,12 @@ export default function BuyNow({ TriggerComponent }: Props) {
 
   // handlePayment Function
   const handlePayment = async () => {
-    const payload = {
-      name,
-      contact,
-      mail,
-      address,
-    };
+    // const payload = {
+    //   name,
+    //   contact,
+    //   mail,
+    //   address,
+    // };
 
     try {
       const res = await fetch(
@@ -58,7 +77,7 @@ export default function BuyNow({ TriggerComponent }: Props) {
           headers: {
             "content-type": "application/json",
           },
-          body: JSON.stringify({ coupon }),
+          body: JSON.stringify({ coupon, shippingCharge }),
         },
       );
 
@@ -72,7 +91,7 @@ export default function BuyNow({ TriggerComponent }: Props) {
   //   handlePaymentVerify Function
   const handlePaymentVerify = async (data: any) => {
     const options = {
-      key: import.meta.env.RAZORPAY_KEY_ID,
+      key: import.meta.env.VITE_RAZORPAY_KEY_ID,
       amount: data.amount,
       currency: data.currency,
       name: "Dr. Ryan Baidya", // Payment to Name
@@ -110,6 +129,7 @@ export default function BuyNow({ TriggerComponent }: Props) {
                   customerEmail: mail,
                   customerAddress: address,
                   contactNo: contact,
+                  shippingCharge,
                 }),
               },
             );
@@ -151,24 +171,10 @@ export default function BuyNow({ TriggerComponent }: Props) {
     }
   };
 
-  const [discoutPercentage, setDiscountPercentage] = useState(0);
-
-  const subTotal = +import.meta.env.VITE_BOOK_NOW;
-  const shippingCharge = +import.meta.env.VITE_SHIPPING_CHARGE;
-  const couponDiscount = (subTotal * discoutPercentage) / 100;
-  const totalAmount = +(subTotal - couponDiscount).toFixed(2) + +shippingCharge;
-
   return (
     <Dialog>
       <DialogTrigger asChild>{TriggerComponent}</DialogTrigger>
       <DialogContent className="w-[900px] max-w-full bg-gray-200">
-        {/* <DialogHeader>
-              <DialogTitle>Buy Now</DialogTitle>
-              <DialogDescription>
-                Anyone who has this coupon will be able to get a discount.
-              </DialogDescription>
-            </DialogHeader> */}
-
         <div className="flex space-x-4">
           {/* Left Section - You can place any custom content here */}
           <div className="w-3/5">
@@ -275,24 +281,6 @@ export default function BuyNow({ TriggerComponent }: Props) {
 
           {/* Right Section - Existing coupon input and actions */}
           <div className="w-2/5">
-            {/* <div className="grid gap-2">
-        <Label htmlFor="link" className="sr-only">
-          Coupon Code
-        </Label>
-        <div className="flex items-center space-x-2">
-          <Input
-            id="link"
-            value={coupon}
-            onChange={(e) => setCoupon(e.target.value)}
-            className="w-full"
-          />
-          <button onClick={applyCouponHandler} className="text-sm text-green-600">
-            Check
-          </button>
-        </div>
-        <h2 className="text-xs text-red-600">{couponMessage}</h2>
-      </div> */}
-
             {/* Product Section */}
             <h2 className="mb-3 text-sm font-medium xl:text-lg">
               Order Summary
@@ -317,18 +305,6 @@ export default function BuyNow({ TriggerComponent }: Props) {
               <Label htmlFor="coupon" className="sr-only">
                 Coupon Code
               </Label>
-              {/* <div className="flex items-center space-x-2">
-        <Input
-          id="coupon"
-          value={coupon}
-          onChange={(e) => setCoupon(e.target.value)}
-          className="w-full"
-          placeholder="Enter Coupon Code"
-        />
-        <button onClick={applyCouponHandler} className="text-sm text-green-600">
-          Apply
-        </button>
-      </div> */}
               {/* Coupon Section */}
               <div className="mb-2 grid gap-2">
                 <Label htmlFor="coupon" className="sr-only">
@@ -361,9 +337,28 @@ export default function BuyNow({ TriggerComponent }: Props) {
                 <span>Subtotal</span>
                 <span>₹{subTotal}</span>
               </div>
-              <div className="flex justify-between text-sm">
+              <div className="flex items-center justify-between text-sm">
                 <span>Shipping Charge</span>
-                <span>₹{shippingCharge}</span>
+                <Select
+                  value={shippingCharge.toString()}
+                  onValueChange={(val) => setShippingCharge(Number(val))}
+                >
+                  <SelectTrigger className="w-24">
+                    {/* <SelectValue placeholder="Theme" /> */}
+                    {shippingCharge}
+                  </SelectTrigger>
+                  <SelectContent align="end" className="bg-white">
+                    <SelectItem value={shippingCharges[0].toString()}>
+                      Rs 110 (5-7 days){" "}
+                    </SelectItem>
+                    <SelectItem value={shippingCharges[1].toString()}>
+                      Rs 315 (5-6 days){" "}
+                    </SelectItem>
+                    <SelectItem value={shippingCharges[2].toString()}>
+                      Rs 540 (2-3 days)
+                    </SelectItem>
+                  </SelectContent>
+                </Select>
               </div>
               <div className="flex justify-between text-sm">
                 <span>Coupon Discount</span>
@@ -391,26 +386,6 @@ export default function BuyNow({ TriggerComponent }: Props) {
                 Place Order
               </button>
             </div>
-
-            {/* <div className="flex items-center space-x-2 mt-6">
-        <DialogFooter className="sm:justify-start">
-          <DialogClose asChild>
-            <button
-              type="button"
-              className="bg-gray-200 text-black text-sm px-6 py-2 rounded-full"
-            >
-              Close
-            </button>
-          </DialogClose>
-        </DialogFooter>
-        <button
-          type="button"
-          onClick={handlePayment}
-          className="text-sm px-6 py-2 rounded-full bg-[#afc584] font-semibold text-white capitalize hover:bg-[#b8ce8d] sm:ml-0 sm:mr-auto"
-        >
-          Buy Now
-        </button>
-      </div> */}
           </div>
         </div>
       </DialogContent>
