@@ -312,7 +312,7 @@ export default function BuyNow({ TriggerComponent }: Props) {
                 </Label>
                 <div>
                   <h2 className="pb-2 text-xs">
-                    Do not have coupon? Click 'By Now' to proceed.
+                    Do not have coupon? Click 'Place Order' to proceed.
                   </h2>
                   <div className="flex items-center space-x-2">
                     <Input
