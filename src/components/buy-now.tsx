@@ -70,7 +70,7 @@ export default function BuyNow({ TriggerComponent }: Props) {
     // };
 
     try {
-      console.log("Printed");
+      
       const res = await fetch(
         `${import.meta.env.VITE_BACKEND_URL}/createOrder`,
         {
@@ -151,6 +151,8 @@ export default function BuyNow({ TriggerComponent }: Props) {
   // For Verifying Coupon
   const applyCouponHandler = async () => {
     try {
+      console.log("Printed");
+      console.log( `${import.meta.env.VITE_BACKEND_URL}/checkCoupon` , "<-----")
       const response = await fetch(
         `${import.meta.env.VITE_BACKEND_URL}/checkCoupon`,
         {
