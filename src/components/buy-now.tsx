@@ -70,6 +70,7 @@ export default function BuyNow({ TriggerComponent }: Props) {
     // };
 
     try {
+      console.log("Printed");
       const res = await fetch(
         `${import.meta.env.VITE_BACKEND_URL}/createOrder`,
         {
