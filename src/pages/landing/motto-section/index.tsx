@@ -55,7 +55,7 @@ export default function Motto() {
               <Mail className="size-10 text-blue-600" />
             </div>
             {/* <p className="font-medium text-slate-600">ItsMyIndia</p> */}
-            <a href="mailto:info@takshilafound.org">info@takshilafound.org</a>
+            <a href="mailto:book@takshilafound.org">book@takshilafound.org</a>
           </div>          
         </div>
       </section>

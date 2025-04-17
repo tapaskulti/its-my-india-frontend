@@ -13,13 +13,13 @@ export default function ContactMedia() {
         <h2 className="text-2xl">Get in Touch</h2>
             <div className="w-full flex justify-between space-x-3 mt-10">
             
-            <div className="text-base">                
+            <div className="text-base">
                 For inquiries, collaborations, or media requests, contact us at:<br /><br />
                 <div className="flex items-center my-3 text-sm"><PhoneCall className="lg:w-6 lg:h-4 w-5 h-4" /><h2>India: +91 77991 12264</h2></div>
 <div className="flex items-center text-sm"><PhoneCall className="lg:w-6 lg:h-4 w-5 h-4" /><h2>USA: +1-408-230-1553</h2></div>
 <div className="mt-5 text-base">
             Comments/Feedback<br />
-Email: <a href="mailto:info@takshilafound.org" className="font-medium">info@takshilafound.org</a>
+Email: <a href="mailto:book@takshilafound.org" className="font-medium">book@takshilafound.org</a>
 
             </div>
 
