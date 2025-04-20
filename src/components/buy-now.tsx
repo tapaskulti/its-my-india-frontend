@@ -170,7 +170,7 @@ export default function BuyNow({ TriggerComponent }: Props) {
         setDiscountPercentage(+data.discountPercentage);
       else setDiscountPercentage(0);
     } catch {
-      setCouponMessage("Error While validating coupon");
+      setCouponMessage("Error while validating coupon");
     }
   };
 
