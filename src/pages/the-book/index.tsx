@@ -296,7 +296,7 @@ India’s current Constitution, shaped by colonial-era laws and governance model
                   <h2 className="text-base text-gray-700 font-semibold">Appendix–III: Proposal for the Establishment of  an Independent <b>"Police of Police"</b> System</h2>
                   <h2 className="text-base text-gray-700 font-semibold">Appendix–IV: How to deter and prevent rape</h2>
                   <h2 className="text-base text-gray-700 font-semibold">Appendix–V: Prime Minister Election Process;</h2>
-                  <span className="pl-[6.75rem] text-gray-700">Chief Minister Election Process</span>
+                  <span className="pl-[6.4rem] text-gray-700">Chief Minister Election Process</span>
                 </div>
               </div>
 
