@@ -4,13 +4,13 @@ import { Label } from "./ui/label";
 import ProductImage from "../assets/book-image.jpeg";
 
 import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  // SelectValue,
-} from "./ui/select";
+// import {
+//   Select,
+//   SelectContent,
+//   SelectItem,
+//   SelectTrigger,
+//   // SelectValue,
+// } from "./ui/select";
 
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
