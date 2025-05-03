@@ -342,12 +342,12 @@ export default function BuyNow({ TriggerComponent }: Props) {
               </div>
               <div className="flex items-center justify-between text-sm">
                 <span>Shipping Charge</span>
-                <Select
+                {/*<Select
                   value={shippingCharge.toString()}
                   onValueChange={(val) => setShippingCharge(Number(val))}
                 >
                   <SelectTrigger className="w-24">
-                    {/* <SelectValue placeholder="Theme" /> */}
+                    
                     {shippingCharge}
                   </SelectTrigger>
                   <SelectContent align="end" className="bg-white">
@@ -361,7 +361,32 @@ export default function BuyNow({ TriggerComponent }: Props) {
                       Rs 540 (2-3 days)
                     </SelectItem>
                   </SelectContent>
-                </Select>
+                </Select>*/}
+
+<div className="space-y-2">
+  {shippingCharges.map((charge, index) => (
+    <label key={charge} className="flex items-center space-x-2 text-sm">
+      <input
+        type="radio"
+        name="shipping"
+        value={charge}
+        checked={shippingCharge === charge}
+        onChange={() => setShippingCharge(charge)}
+        className="accent-[#5f63b8]"
+      />
+      <span>
+        Rs {charge}{" "}
+        {index === 0
+          ? "(5-7 days)"
+          : index === 1
+          ? "(5-6 days)"
+          : "(2-3 days)"}
+      </span>
+    </label>
+  ))}
+</div>
+
+
               </div>
               <div className="flex justify-between text-sm">
                 <span>Coupon Discount</span>
