@@ -347,7 +347,6 @@ export default function BuyNow({ TriggerComponent }: Props) {
                   onValueChange={(val) => setShippingCharge(Number(val))}
                 >
                   <SelectTrigger className="w-24">
-
                     {shippingCharge}
                   </SelectTrigger>
                   <SelectContent align="end" className="bg-white">
