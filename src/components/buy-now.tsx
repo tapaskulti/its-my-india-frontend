@@ -361,6 +361,10 @@ export default function BuyNow({ TriggerComponent }: Props) {
                     </SelectItem>
                   </SelectContent>
                 </Select> */}
+
+
+
+                
                 <div className="space-y-2">
   {shippingCharges.map((charge, index) => (
     <label key={charge} className="flex items-center space-x-2 text-sm">
